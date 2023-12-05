@@ -19,14 +19,14 @@ CARMEN SANDIEGO</pre>
         </h1><br><br>
     </header>
     <div class="btnComençar">
-        <button type="button" value="Començar Joc">COMENÇAR JOC</button>
+        <button onclick="comencarJoc()" type="button" value="Començar Joc">COMENÇAR JOC</button>
     </div>
     <div class="btnReiniciar">
         <button type="button" value="Reiniciar Joc" disabled>REINICIAR</button>
     </div>
-    <div class="conjunto">
+    <div class="joc">
         <div class="opciones">
-            <label for="ciutats">Respostes:</label>
+            <label for="ciutats">Tria una resposta:</label>
             <select name="ciutats" id="ciutats">
                 <option value="nulo" selected disabled hidden>Selecciona una opció</option>
                 <option value="tokyo">Tokyo</option>
@@ -35,8 +35,8 @@ CARMEN SANDIEGO</pre>
                 <option value="moscow">Moscow</option>
                 <option value="paris">París</option>
             </select>
-            <button class="btnResultat" onclick="comprobarResultat()">Comprobar</button>
         </div>
+        <button class="btnResultat" onclick="comprobarResultat()">Comprobar</button>
         <div class="img">
             <input type="image" src="img/carmen_sandiego.jpeg">
         </div>
