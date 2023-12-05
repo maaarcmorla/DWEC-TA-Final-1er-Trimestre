@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Carmen Sandiego</title>
+</head>
+
+<body>
+    <header>
+        <br><br>
+        <h1>
+            <pre>
+TROBAR A 
+CARMEN SANDIEGO</pre>
+        </h1><br><br>
+    </header>
+    <div class="btnComençar">
+        <button type="button" value="Començar Joc">COMENÇAR JOC</button>
+    </div>
+    <div class="btnReiniciar">
+        <button type="button" value="Reiniciar Joc" disabled>REINICIAR</button>
+    </div>
+    <div class="conjunto">
+        <div class="opciones">
+            <label for="ciutats">Respostes:</label>
+            <select name="ciutats" id="ciutats">
+                <option value="nulo" selected disabled hidden>Selecciona una opció</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="berlin">Berlín</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="moscow">Moscow</option>
+                <option value="paris">París</option>
+            </select>
+            <button class="btnResultat" onclick="comprobarResultat()">Comprobar</button>
+        </div>
+        <div class="img">
+            <input type="image" src="img/carmen_sandiego.jpeg">
+        </div>
+    </div>
+</body>
+
+</html>
