@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <script src="./carmenSandiego.js"></script>
+
     <header>
         <br><br>
         <h1>
@@ -18,17 +20,21 @@ TROBAR A
 CARMEN SANDIEGO</pre>
         </h1><br><br>
     </header>
+
     <div class="btnComençar">
-        <button onclick="comencarJoc()" type="button" value="Començar Joc">COMENÇAR JOC</button>
+        <button onclick="comencarJoc()">COMENÇAR JOC</button>
     </div>
     <div class="btnReiniciar">
-        <button type="button" value="Reiniciar Joc" disabled>REINICIAR</button>
+        <button onclick="reiniciarJoc()">REINICIAR</button>
+    </div>
+    <div class="contador">
+        <p>Temps restant: <div id="contador"></div></p> <p>Errades: <div id="fallos"></div></p>
     </div>
     <div class="joc">
         <div class="opciones">
-            <label for="ciutats">Tria una resposta:</label>
+            <label for="ciutats">Tria una resposta: </label>
             <select name="ciutats" id="ciutats">
-                <option value="nulo" selected disabled hidden>Selecciona una opció</option>
+                <option value="nulo" selected disabled>Selecciona una opció</option>
                 <option value="tokyo">Tokyo</option>
                 <option value="berlin">Berlín</option>
                 <option value="barcelona">Barcelona</option>
@@ -38,7 +44,7 @@ CARMEN SANDIEGO</pre>
         </div>
         <button class="btnResultat" onclick="comprobarResultat()">Comprobar</button>
         <div class="img">
-            <input type="image" src="img/carmen_sandiego.jpeg">
+            <input type="image" alt="Carmen Sandiego" src="img/carmen_sandiego.jpeg">
         </div>
     </div>
 </body>
