@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Link arxiu CSS amb els estils -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
@@ -11,22 +12,27 @@
 
 <body>
     <script src="./carmenSandiego.js"></script>
+    <!-- Titol del joc -->
     <h1>TROBAR A CARMEN SANDIEGO</h1>
+
+    <!-- Botons i contador -->
     <div class="botonsIcontador">
         <div class="btnComençar">
             <button onclick="comencarJoc()">COMENÇAR JOC</button>
         </div>
         <div class="btnReiniciar">
-            <button onclick="reiniciarJoc()">REINICIAR</button>
+            <button id="botoReiniciar" onclick="reiniciarJoc()">REINICIAR</button>
         </div>
         <div class="contador">
-            <p>Temps restant: <br><div id="contador"></div></p>
+            <p id="bContador">Temps restant: <br><div id="contador"></div></p>
         </div>
     </div>
+
+    <!-- Select, botons, errades, pistes i la imatge -->
     <div class="joc">
         <div class="opciones">
-            <label for="ciutats">Tria una resposta: </label>
-            <select name="ciutats" id="ciutats">
+            <label id="label" for="ciutats">Tria una resposta: </label>
+            <select name="ciutats" id="ciutats" >
                 <option value="nulo" selected disabled>Selecciona una opció</option>
                 <option value="tokyo">Tokyo</option>
                 <option value="berlin">Berlín</option>
