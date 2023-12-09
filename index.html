@@ -11,24 +11,17 @@
 
 <body>
     <script src="./carmenSandiego.js"></script>
-
-    <header>
-        <br><br>
-        <h1>
-            <pre>
-TROBAR A 
-CARMEN SANDIEGO</pre>
-        </h1><br><br>
-    </header>
-
-    <div class="btnComençar">
-        <button onclick="comencarJoc()">COMENÇAR JOC</button>
-    </div>
-    <div class="btnReiniciar">
-        <button onclick="reiniciarJoc()">REINICIAR</button>
-    </div>
-    <div class="contador">
-        <p>Temps restant: <div id="contador"></div></p> <p>Errades: <div id="fallos"></div></p>
+    <h1>TROBAR A CARMEN SANDIEGO</h1>
+    <div class="botonsIcontador">
+        <div class="btnComençar">
+            <button onclick="comencarJoc()">COMENÇAR JOC</button>
+        </div>
+        <div class="btnReiniciar">
+            <button onclick="reiniciarJoc()">REINICIAR</button>
+        </div>
+        <div class="contador">
+            <p>Temps restant: <br><div id="contador"></div></p>
+        </div>
     </div>
     <div class="joc">
         <div class="opciones">
@@ -43,8 +36,12 @@ CARMEN SANDIEGO</pre>
             </select>
         </div>
         <button class="btnResultat" onclick="comprobarResultat()">Comprobar</button>
+        <div class="fallos">        
+            <p>Errades: <div id="fallos"></div></p>
+            <p id="pistes"></p>
+        </div>
         <div class="img">
-            <input type="image" alt="Carmen Sandiego" src="img/carmen_sandiego.jpeg">
+            <input type="image" id="pistes" alt="Carmen Sandiego" onmouseover="mostrarPistes();" src="img/carmen_sandiego.jpeg">
         </div>
     </div>
 </body>
